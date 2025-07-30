@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank Mittal - QA Engineer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Shashank Mittal's personal portfolio showcasing expertise as a QA Engineer, skills, projects, and contact information.">
+    <meta name="keywords"
+        content="Shashank Mittal, QA Engineer, Quality Assurance, Software Testing, Portfolio, Automation Testing, Manual Testing">
+    <meta name="author" content="Shashank Mittal">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (for social media preview) -->
+    <meta property="og:title" content="Shashank Mittal - QA Engineer">
+    <meta property="og:description"
+        content="Explore the professional portfolio of Shashank Mittal, a passionate QA Engineer.">
+    <meta property="og:image" content="https://example.com/preview.jpg"> <!-- Replace with your actual image URL -->
+    <meta property="og:url" content="https://yourdomain.com"> <!-- Replace with your portfolio URL -->
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Place favicon.ico in your root folder -->
+    <!-- Optional: For modern browsers -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <!-- Google Fonts: Poppins and Roboto -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- Page Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!--Share button-->
+    <div class="share-container">
+        
+        <div class="social-share-buttons">
+            <button class="social-share facebook">
+                <i class="fab fa-facebook-f"></i>
+                <a href="https://www.facebook.com/shashank.mittal.1238" target="_blank"></a>
+            </button>
+            <button class="social-share twitter">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button class="social-share linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </button>
+            <button class="social-share whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header id="header">
+        <div class="container navbar-container">
+            <a href="#home" class="logo">
+                <div class="logo-initials">S</div>
+                <div class="logo-name">M</div>
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                    <li><a href="#case-study" class="nav-link">Case Study</a></li>
+                    <li><a href="#education-experience" class="nav-link">Education & Experience</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <nav class="mobile-nav-menu">
+            <ul class="mobile-nav-list">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#case-study" class="mobile-nav-link">Case Study</a></li>
+                <li><a href="#education-experience" class="mobile-nav-link">Education & Experience</a></li>
+                <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <p class="hero-intro fade-in-up">Hello, I'm</p>
+                <h1 class="hero-name fade-in-up">Shashank Mittal</h1>
+                <h2 class="hero-title fade-in-up">
+                    <span id="typing-text"></span><span class="typing-cursor">|</span>
+                </h2>
+                <p class="hero-description fade-in-up">
+                    A highly motivated and detail-oriented SDET- II with 4.0 years of experience, possessing a strong
+                    background in software testing.
+                </p>
+                <a href="Shashank_Resume 2.pdf" download class="btn btn-primary fade-in-up">Download Resume</a>
+            </div>
+            <!-- Simple background animation element -->
+            <div class="hero-bg-animation"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container about-content">
+                <div class="about-image fade-in">
+                    <!-- Placeholder image for your photo -->
+                    <img src="asserts\sh_potrait.png" alt="Shashank Mittal Photo">
+                </div>
+                <div class="about-text fade-in">
+                    <h2 class="section-title">About Me</h2>
+                    <p>
+                        Highly motivated and detail-oriented QA Engineer-II with 4.0 years of experience, possessing a
+                        strong background in software testing. Proven ability to deliver high-quality results and exceed
+                        expectations. Skilled in testing and possessing excellent communication and problem-solving
+                        skills.
+                    </p>
+                    <p>
+                        I am seeking a challenging role that leverages my skills and experience to drive business growth
+                        and success. My professional journey includes significant contributions to requirement analysis,
+                        test case design, test strategy formulation, and meticulous bug tracking using JIRA.
+                    </p>
+                    <p>
+                        I am proficient in Automation Testing with Selenium WebDriver, Python, Pytest, and
+                        VSCode/Eclipse, as well as API Testing with Postman and Swagger. I have experience in both
+                        exploratory and regression testing, consistently identifying a greater number of bugs and
+                        contributing to robust software quality.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-robot skill-icon"></i> <!-- Using robot icon for automation -->
+                        <h3>Automation Testing</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fab fa-python skill-icon"></i>
+                        <h3>Python</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="50" fill="currentColor"
+                                class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708" />
+                            </svg>
+                        </i>
+                        <h3>Playwright</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="skill-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="50" fill="currentColor"
+                                class="bi bi-javascript" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM9.053 7.596v3.127l-.007 1.752q0 .498-.186.752t-.556.263q-.342 0-.528-.234-.185-.234-.185-.684v-.175H6.37v.185q0 .665.253 1.113.255.45.703.674.44.225 1.016.225.88 0 1.406-.498.527-.498.527-1.485l.007-1.752V7.596zm3.808-.108q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518" />
+                            </svg>
+                        </i>
+                        <h3>Javascript</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fa-solid fa-user-tie skill-icon"></i>
+                        <h3>Jenkins</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fa-brands fa-html5 skill-icon"></i>
+                        <h3>HTML</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fa-brands fa-css3-alt skill-icon"></i>
+                        <h3>CSS</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-bug skill-icon"></i> <!-- Using bug icon for Selenium/Testing -->
+                        <h3>Selenium WebDriver</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-file-code skill-icon"></i> <!-- Using file-code for VSCode/Eclipse -->
+                        <h3>VSCode/Eclipse</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fab fa-git-alt skill-icon"></i>
+                        <h3>Git</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-flask skill-icon"></i> <!-- Using flask for Pytest -->
+                        <h3>Pytest</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 82%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-project-diagram skill-icon"></i> <!-- Using project-diagram for SDLC -->
+                        <h3>SDLC/STLC</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-clipboard-check skill-icon"></i>
+                        <!-- Using clipboard-check for Functional Testing -->
+                        <h3>Functional Testing</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 92%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-redo-alt skill-icon"></i> <!-- Using redo-alt for Regression Testing -->
+                        <h3>Regression Testing</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-sync-alt skill-icon"></i> <!-- Using sync-alt for Re-testing -->
+                        <h3>Re-testing</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-search skill-icon"></i> <!-- Using search for Exploratory Testing -->
+                        <h3>Exploratory Testing</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-arrows-alt-h skill-icon"></i>
+                        <!-- Using arrows-alt-h for End to End Testing -->
+                        <h3>End to End Testing</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 87%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h3>Database Testing (SQL)</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 78%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-desktop skill-icon"></i> <!-- Using desktop for UI Testing -->
+                        <h3>UI Testing</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 89%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-globe skill-icon"></i> <!-- Using globe for Web Application Testing -->
+                        <h3>Web Application Testing</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 91%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-network-wired skill-icon"></i> <!-- Using network-wired for API Testing -->
+                        <h3>API Testing [Postman]</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 86%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fa-brands fa-jira skill-icon"></i> <!-- Using ticket-alt for JIRA -->
+                        <h3>JIRA</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fas fa-cloud skill-icon"></i>
+                        <h3>Cloud Testing</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fa-solid fa-l skill-icon"></i>
+                        <h3>Linux</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card fade-in-up">
+                        <i class="fa-solid fa-w skill-icon"></i>
+                        <h3>Window</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">My Projects</h2>
+                <div class="portfolio-grid">
+
+                    <!-- Jansatta -->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-dark="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>Jansatta</h3>
+                            <p>Prominent Indian newspapers with digital reach across multiple cities.</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Loksatta -->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://images.seeklogo.com/logo-png/40/1/loksatta-logo-png_seeklogo-405684.png"
+                            data-dark="https://images.seeklogo.com/logo-png/40/1/loksatta-logo-png_seeklogo-405684.png"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>Loksatta</h3>
+                            <p>Prominent Indian newspapers with digital reach across multiple cities.</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+                    <!-- Trade India -->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://play-lh.googleusercontent.com/4fXCkVQQrzInAQfcJ1oIpbFq-PdNtetkaVpFdNsGhyk2xAMyfm5t0OuyLRm5LO5D3sA"
+                            data-dark="https://play-lh.googleusercontent.com/4fXCkVQQrzInAQfcJ1oIpbFq-PdNtetkaVpFdNsGhyk2xAMyfm5t0OuyLRm5LO5D3sA"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>Trade India</h3>
+                            <p>India's largest online B2B marketplace, connecting buyers and sellers globally.</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+                    <!-- TV9 News -->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://indiantelevision.com/sites/default/files/styles/smartcrop_800x800/public/images/tv-images/2025/05/16/TV9-DIGITAL-LOGO.jpg?itok=3NBYF255"
+                            data-dark="https://indiantelevision.com/sites/default/files/styles/smartcrop_800x800/public/images/tv-images/2025/05/16/TV9-DIGITAL-LOGO.jpg?itok=3NBYF255"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>TV9 News</h3>
+                            <p>News application available on Android & iOS, delivering personalized news feeds based on
+                                user preferences</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+
+                    <!--Proceum-->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8e/ec/56/8eec5670-b625-8ae6-1a1a-4b5a28061788/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/1200x600wa.png"
+                            data-dark="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8e/ec/56/8eec5670-b625-8ae6-1a1a-4b5a28061788/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/1200x600wa.png"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>Proceum</h3>
+                            <p>News application available on Android & iOS, delivering personalized news feeds based on
+                                user preferences</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+
+
+                    <!--Neek mahua tv-->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://image.winudf.com/v2/image1/Y29tLnF1ZXJ5YXBwcy5uZWVrX21haHVhYV9zY3JlZW5fM18xNjE4MjI1NTM2XzAzOQ/screen-3.jpg?fakeurl=1&type=.jpg"
+                            data-dark="https://image.winudf.com/v2/image1/Y29tLnF1ZXJ5YXBwcy5uZWVrX21haHVhYV9zY3JlZW5fM18xNjE4MjI1NTM2XzAzOQ/screen-3.jpg?fakeurl=1&type=.jpg"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>Neek Mahuaa TV</h3>
+                            <p>News application available on Android & iOS, delivering personalized news feeds based on
+                                user preferences</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- India OTT -->
+                    <div class="portfolio-item fade-in-up">
+                        <picture>
+                            <source srcset="https://placehold.co/600x400/000000/FFFFFF?text=India+OTT+Dark"
+                                media="(prefers-color-scheme: dark)">
+                            <img src="https://placehold.co/600x400/E0E0E0/333333?text=India+OTT"
+                                alt="India OTT Project">
+                        </picture>
+                        <div class="portfolio-overlay">
+                            <h3>India OTT</h3>
+                            <p>News application on Android & iOS, utilizing advanced algorithms for personalized content
+                                delivery.</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- ICAI Engage -->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://static.toiimg.com/thumb/imgsize-235754,msid-122264954,width-400,resizemode-4/122264954.jpg"
+                            data-dark="https://static.toiimg.com/thumb/imgsize-235754,msid-122264954,width-400,resizemode-4/122264954.jpg"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>ICAI Engage</h3>
+                            <p>A web-based platform for ICAI members and students, providing free access to educational
+                                resources.</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Physics walah -->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/26/85/7d/26857da1-cb3a-0113-0256-4264c5806243/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/1200x630wa.png"
+                            data-dark="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/26/85/7d/26857da1-cb3a-0113-0256-4264c5806243/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/1200x630wa.png"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>Physics Wallah</h3>
+                            <p>A web-based platform for ICAI members and students, providing free access to educational
+                                resources.</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Utkarsh Class -->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://utkarsh.com/images/seo.jpg"
+                            data-dark="https://utkarsh.com/images/seo.jpg" alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>Utkarsh Classes</h3>
+                            <p>A web-based platform for ICAI members and students, providing free access to educational
+                                resources.</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="case-study" class="case-study-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">Case Studies</h2>
+                <div class="portfolio-grid">
+
+                    <!-- Jansatta -->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-dark="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>Jansatta</h3>
+                            <p>Prominent Indian newspapers with digital reach across multiple cities.</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+
+                    <!-- Loksatta -->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://images.seeklogo.com/logo-png/40/1/loksatta-logo-png_seeklogo-405684.png"
+                            data-dark="https://images.seeklogo.com/logo-png/40/1/loksatta-logo-png_seeklogo-405684.png"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>Loksatta</h3>
+                            <p>Prominent Indian newspapers with digital reach across multiple cities.</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+                    <!-- Trade India -->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://play-lh.googleusercontent.com/4fXCkVQQrzInAQfcJ1oIpbFq-PdNtetkaVpFdNsGhyk2xAMyfm5t0OuyLRm5LO5D3sA"
+                            data-dark="https://play-lh.googleusercontent.com/4fXCkVQQrzInAQfcJ1oIpbFq-PdNtetkaVpFdNsGhyk2xAMyfm5t0OuyLRm5LO5D3sA"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>Trade India</h3>
+                            <p>India's largest online B2B marketplace, connecting buyers and sellers globally.</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+                    <!-- TV9 News -->
+                    <div class="portfolio-item fade-in-up">
+                        <img class="theme-image"
+                            src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
+                            data-light="https://indiantelevision.com/sites/default/files/styles/smartcrop_800x800/public/images/tv-images/2025/05/16/TV9-DIGITAL-LOGO.jpg?itok=3NBYF255"
+                            data-dark="https://indiantelevision.com/sites/default/files/styles/smartcrop_800x800/public/images/tv-images/2025/05/16/TV9-DIGITAL-LOGO.jpg?itok=3NBYF255"
+                            alt="Jansatta Project" />
+                        <div class="portfolio-overlay">
+                            <h3>TV9 News</h3>
+                            <p>News application available on Android & iOS, delivering personalized news feeds based on
+                                user preferences</p>
+                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                                View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education and Experience Section -->
+        <section id="education-experience" class="education-experience-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">Education & Experience</h2>
+
+                <!-- Education -->
+                <div class="education-container fade-in-up">
+                    <h3 class="subsection-title"><i class="fa-solid fa-book-open"></i> <u>Education</u></h3>
+                    <div class="education-card">
+                        <h4>Bachelor of Technology in Computer Science</h4>
+                        <p class="institution">Dr. A.P.J. Abdul Kalam Technical University</p>
+                        <p class="location">Lucknow, Uttar Pradesh</p>
+                        <p class="duration">2015 - 2019</p>
+                        <ul class="education-details">
+                            <li>Graduated with First Division</li>
+                            <li>Specialized in Software Testing and Quality Assurance</li>
+                            <li>Key coursework: Software Engineering, Database Management, Web Development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="experience-container fade-in-up">
+                    <h3 class="subsection-title"><i class="fa-solid fa-briefcase"></i> <u>Professional Experience</u>
+                    </h3>
+
+                    <!-- Current Role -->
+                    <div class="experience-card">
+                        <h4>SDET-II (Software Development Engineer in Test)</h4>
+                        <p class="company">Nextgen Healthcare Private Limited</p>
+                        <p class="location">Noida, Uttar Pradesh</p>
+                        <p class="duration">July 2023 - Present</p>
+                        <ul class="experience-details">
+                            <li>Lead end-to-end testing of web applications, implementing automated test suites that
+                                reduced testing time by 60%</li>
+                            <li>Develop and maintain automated test frameworks using Python, Playwright, and JavaScript
+                            </li>
+                            <li>Coordinate with cross-functional teams to ensure quality deliverables and timely project
+                                completion</li>
+                            <li>Mentor junior QA engineers and conduct code reviews for test automation scripts</li>
+                        </ul>
+                    </div>
+
+                    <!-- Previous Role 1 -->
+                    <div class="experience-card">
+                        <h4>Senior Quality Analyst</h4>
+                        <p class="company">Times Internet Limited</p>
+                        <p class="location">Noida, Uttar Pradesh</p>
+                        <p class="duration">April 2021 - June 2023</p>
+                        <ul class="experience-details">
+                            <li>Spearheaded testing efforts for multiple news applications, ensuring seamless
+                                performance across Android and iOS platforms</li>
+                            <li>Implemented automated testing solutions using Selenium WebDriver and Python, achieving
+                                80% test coverage</li>
+                            <li>Designed and executed comprehensive test plans for responsive web applications with CSS
+                                animations and dynamic content</li>
+                            <li>Reduced bug leakage to production by 40% through improved testing methodologies</li>
+                        </ul>
+                    </div>
+
+                    <!-- Previous Role 2 -->
+                    <div class="experience-card">
+                        <h4>Quality Analyst</h4>
+                        <p class="company">Trade India</p>
+                        <p class="location">Noida, Uttar Pradesh</p>
+                        <p class="duration">July 2019 - March 2021</p>
+                        <ul class="experience-details">
+                            <li>Conducted thorough testing of B2B marketplace platform, including UI/UX testing with
+                                complex CSS layouts and animations</li>
+                            <li>Developed and maintained test documentation, including test cases, bug reports, and test
+                                metrics</li>
+                            <li>Collaborated with developers to resolve critical issues, reducing average bug resolution
+                                time by 30%</li>
+                            <li>Implemented automated regression testing, covering core business functionalities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">My Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card fade-in-up">
+                        <i class="fas fa-award achievement-icon"></i>
+                        <h3 class="Achievement-title">Enhanced Test Coverage</h3>
+                        <p>Formulated test strategies, devised detailed test cases, and crafted test scenarios, leading
+                            to comprehensive test coverage.</p>
+                    </div>
+                    <div class="achievement-card fade-in-up">
+                        <i class="fas fa-chart-line achievement-icon"></i>
+                        <h3>Improved Bug Tracking</h3>
+                        <p>Diligently tracked bugs using JIRA and delivered exhaustive reports on identified defects,
+                            contributing to faster resolution.</p>
+                    </div>
+                    <div class="achievement-card fade-in-up">
+                        <i class="fas fa-code achievement-icon"></i>
+                        <h3>Automation Contribution</h3>
+                        <p>Contributed to Automation Testing efforts with Selenium WebDriver, Python, and Pytest,
+                            enhancing testing efficiency.</p>
+                    </div>
+                    <div class="achievement-card fade-in-up">
+                        <i class="fas fa-cogs achievement-icon"></i>
+                        <h3>Backend Management</h3>
+                        <p>Successfully handled the Backend part (Admin Panel) of various projects, ensuring smooth
+                            operation and data integrity.</p>
+                    </div>
+                    <div class="achievement-card fade-in-up">
+                        <i class="fas fa-mobile-alt achievement-icon"></i>
+                        <h3>Multi-Platform Testing</h3>
+                        <p>Executed manual tests for website applications and mobile platforms (Android & iOS), ensuring
+                            cross-platform compatibility.</p>
+                    </div>
+                    <div class="achievement-card fade-in-up">
+                        <i class="fas fa-lightbulb achievement-icon"></i>
+                        <h3>Exploratory Testing Success</h3>
+                        <p>Conducted both Exploratory and Regression testing, consistently finding a greater number of
+                            critical bugs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-slider" id="bannerSlider">
+                <div class="slides" id="slides">
+                    <img src="asserts\appsquadz.png" class="slide" alt="Slide 1" />
+                    <img src="asserts\trade india.jpg" class="slide" alt="Slide 2" />
+                    <!-- <img src="img3.jpg" class="slide" alt="Slide 3" /> -->
+                </div>
+
+                <!-- Arrows -->
+                <button class="arrow prev" id="prevBtn">&#10094;</button>
+                <button class="arrow next" id="nextBtn">&#10095;</button>
+
+                <!-- Dots -->
+                <div class="dots" id="dotsContainer"></div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">Get In Touch</h2>
+                <div class="contact-form-container fade-in">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="Your message..."></textarea>
+                            <div class="error-message" id="messageError"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shashank Mittal. All rights reserved.</p>
+            <!-- <div class="social-links">
+                <a href="https://www.linkedin.com/in/shashankmittal22" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div> -->
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom Message Box -->
+    <div id="messageBox" class="message-box">
+        <div class="message-box-content">
+            <span class="close-button">&times;</span>
+            <p id="messageBoxText"></p>
+            <button class="btn btn-secondary" id="messageBoxOkBtn">OK</button>
+        </div>
+    </div>
+
+    <!-- Add Modal Structure for Project Details -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalProjectTitle" class="modal-title"></h3>
+            <p id="modalProjectDescription" style="display: none;"></p>
+            <div class="modal-info">
+                <div class="project-details">
+                    <h4>Project Overview</h4>
+                    <ul id="modalProjectOverview"></ul>
+                </div>
+                <div class="project-details">
+                    <h4>Key Features</h4>
+                    <ul id="modalProjectFeatures"></ul>
+                </div>
+                <div class="project-details">
+                    <h4>Technologies Used</h4>
+                    <ul id="modalProjectTech"></ul>
+                </div>
+                <div class="project-details">
+                    <h4>My Role</h4>
+                    <ul id="modalProjectRole"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
