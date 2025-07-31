@@ -55,7 +55,9 @@
 
     <!--Share button-->
     <div class="share-container">
-        
+        <!-- <button id="shareButton" class="share-toggle-button">
+            <i class="fas fa-share-alt"></i>
+        </button> -->
         <div class="social-share-buttons">
             <button class="social-share facebook">
                 <i class="fab fa-facebook-f"></i>
@@ -533,37 +535,37 @@
                 <h2 class="section-title text-center">Case Studies</h2>
                 <div class="portfolio-grid">
 
-                    <!-- Jansatta -->
-                    <div class="portfolio-item fade-in-up">
+                    <!-- rip_course -->
+                    <div class="case-study-item fade-in-up">
                         <img class="theme-image"
                             src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
-                            data-light="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
-                            data-dark="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
-                            alt="Jansatta Project" />
+                            data-light="\asserts\rip-courses.png"
+                            data-dark="\asserts\rip-courses.png"
+                            alt="rip_course" />
                         <div class="portfolio-overlay">
-                            <h3>Jansatta</h3>
-                            <p>Prominent Indian newspapers with digital reach across multiple cities.</p>
-                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                            <h3>RIP Courses</h3>
+                            <p>Discover top-rated courses in programming, design, business, and more without paying a penny.</p>
+                            <a href="https://rip-courses.vercel.app/" target="_blank" class="case-study-link"><i class="fas fa-external-link-alt"></i>
                                 View Details</a>
                         </div>
                     </div>
 
                     <!-- Loksatta -->
-                    <div class="portfolio-item fade-in-up">
+                    <div class="case-study-item fade-in-up">
                         <img class="theme-image"
                             src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
-                            data-light="https://images.seeklogo.com/logo-png/40/1/loksatta-logo-png_seeklogo-405684.png"
-                            data-dark="https://images.seeklogo.com/logo-png/40/1/loksatta-logo-png_seeklogo-405684.png"
-                            alt="Jansatta Project" />
+                            data-light="asserts\tool-nest.png"
+                            data-dark="asserts\tool-nest.png"
+                            alt="tool-nest" />
                         <div class="portfolio-overlay">
-                            <h3>Loksatta</h3>
-                            <p>Prominent Indian newspapers with digital reach across multiple cities.</p>
-                            <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
+                            <h3>Tool Nest</h3>
+                            <p><b>Split Your Data Easily:</b> Upload your file, select columns, specify a delimiter, and get your data split into multiple columns.</p>
+                            <a href="https://toolnest-nu.vercel.app/" target="_blank" class="case-study-link"><i class="fas fa-external-link-alt"></i>
                                 View Details</a>
                         </div>
                     </div>
                     <!-- Trade India -->
-                    <div class="portfolio-item fade-in-up">
+                    <!-- <div class="portfolio-item fade-in-up">
                         <img class="theme-image"
                             src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
                             data-light="https://play-lh.googleusercontent.com/4fXCkVQQrzInAQfcJ1oIpbFq-PdNtetkaVpFdNsGhyk2xAMyfm5t0OuyLRm5LO5D3sA"
@@ -575,9 +577,9 @@
                             <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
                                 View Details</a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- TV9 News -->
-                    <div class="portfolio-item fade-in-up">
+                    <!-- <div class="portfolio-item fade-in-up">
                         <img class="theme-image"
                             src="https://play-lh.googleusercontent.com/3IfkXHiGq2jxVHvCmF1D9meeJi01VIISuwURJRHswQ0oKUl-C1-5W7VF-MK6GeHoqZI"
                             data-light="https://indiantelevision.com/sites/default/files/styles/smartcrop_800x800/public/images/tv-images/2025/05/16/TV9-DIGITAL-LOGO.jpg?itok=3NBYF255"
@@ -590,7 +592,7 @@
                             <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i>
                                 View Details</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -814,6 +816,18 @@
                 <div class="project-details">
                     <h4>My Role</h4>
                     <ul id="modalProjectRole"></ul>
+                </div>
+                <div class="project-details">
+                    <h4>Outcome/Impact</h4>
+                    <ul id="modalProjectOutcome"></ul>
+                </div>
+                <div class="project-details">
+                    <h4>Project Links</h4>
+                    <div id="modalProjectLinks" class="browser-links">
+                        <a id="modalLiveLink" href="#" target="_blank" class="btn btn-link" style="display: none;"><i class="fas fa-external-link-alt"></i></a>
+                        <a id="modalGithubLink" href="#" target="_blank" class="btn btn-link" style="display: none;"><i class="fab fa-github"></i></a>
+                        <a id="modalAppLink" href="#" target="_blank" class="btn btn-link" style="display: none;"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

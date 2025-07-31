@@ -185,7 +185,7 @@ body {
 .share-container {
     position: fixed;
     right: 20px;
-    bottom: 80px;
+    bottom: 110px;
     z-index: 1000;
 }
 
@@ -731,6 +731,45 @@ body {
 }
 
 
+/*Model POPUP Button*/
+
+.website-link{
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    color: var(--dark-text-color);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+}
+
+.website-link:hover{
+    background-color: var(--secondary-color);
+
+}
+
+
+.browser-links{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-link {
+    background-color: var(--card-bg-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    width: 55px;
+    height: 59px;
+}
+
+.btn-link:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 /*Case Studies Section */
 .case-study-section {
     background-color: var(--bg-color);
@@ -740,11 +779,11 @@ body {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0fr));
     gap: 30px;
 }
 
-.portfolio-item {
+.case-study-item {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
@@ -752,20 +791,20 @@ body {
     transition: transform 0.3s ease;
 }
 
-.portfolio-item:hover {
+.case-study-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px var(--secondary-color);
 }
 
-.portfolio-item img {
+.case-study-item img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     transition: transform 0.5s ease;
 }
 
-.portfolio-item:hover img {
+.case-study-item:hover img {
     transform: scale(1.05);
 }
 
@@ -787,7 +826,7 @@ body {
     text-align: center;
 }
 
-.portfolio-item:hover .portfolio-overlay {
+.case-study-item:hover .portfolio-overlay {
     opacity: 1;
 }
 
@@ -802,14 +841,14 @@ body {
     margin-bottom: 20px;
 }
 
-.project-link {
+.case-study-link {
     color: var(--dark-text-color);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
-.project-link:hover {
+.case-study-link:hover {
     color: var(--secondary-color);
 
 }

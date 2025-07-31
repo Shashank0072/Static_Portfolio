@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Smooth Scroll for Navigation Links ---
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('.nav-link, .mobile-nav-link, .logo').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
@@ -409,7 +409,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Developed automated test suites reducing testing time by 60%',
                 'Implemented CI/CD pipeline for test automation',
                 'Coordinated with development team for bug fixes'
-            ]
+            ],
+            outcome:[
+                'Improved test coverage by 40%',
+            ],
+            liveLink: 'https://www.jansatta.com/',
+            githubLink: 'https://www.jansatta.com/', // No public GitHub repo for this project
+            modalAppLink:'https://www.jansatta.com/'
+
         },
         'Loksatta': {
             overview: [
@@ -435,9 +442,58 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Created comprehensive test scenarios',
                 'Performed cross-browser testing',
                 'Tracked and reported bugs using JIRA'
-            ]
-        }
+            ],
+            outcome:[
+                'Enhanced user experience with faster load times',
+            ],
+            liveLink: 'https://www.loksatta.com/',
+            githubLink: '',
+            modalAppLink:''
+        },
+        'Trade India': {
+            overview: [
+                "India's largest B2B marketplace, connecting global buyers and sellers.",
+                "Focused on providing a platform for small and medium-sized enterprises (SMEs)."
+            ],
+            features: [
+                "Product and company search",
+                "Inquiry and quotation system",
+                "User authentication and profiles"
+            ],
+            technologies: ['Manual Testing', 'JIRA', 'SQL', 'Postman'],
+            role: [
+                "Conducted thorough testing of the B2B marketplace platform.",
+                "Developed and maintained test documentation, including test cases and bug reports.",
+                "Collaborated with developers to resolve critical issues, reducing bug resolution time."
+            ],
+            outcome: [
+                "Improved platform stability by identifying and reporting critical bugs.",
+                "Ensured a high-quality user experience for both buyers and sellers."
+            ],
+            liveLink: 'https://www.tradeindia.com/',
+            githubLink: '',
+            modalAppLink:''
+        },
+        'Physics Wallah': {
+            overview: [
+                "An Ed-tech platform providing affordable and quality education for competitive exams.",
+                "Caters to millions of students across India."
+            ],
+            features: ["Live classes", "Recorded lectures", "Online tests", "Doubt solving sessions"],
+            technologies: ['Selenium WebDriver', 'Python', 'Pytest', 'Appium', 'JIRA'],
+            role: [
+                "Performed functional and regression testing on web and mobile platforms.",
+                "Contributed to the automation framework for regression test suites.",
+                "Validated new features and ensured they met quality standards before release."
+            ],
+            outcome: ["Ensured a stable and bug-free learning experience for students.", "Reduced manual testing effort through automation."],
+            liveLink: 'https://www.pw.live/',
+            githubLink: '',
+            modalAppLink:''
+        },
+        // Add other projects here in the same format...
     };
+
 
     // --- Modal Functionality ---
     const modal = document.getElementById('projectModal');
@@ -449,7 +505,11 @@ document.addEventListener('DOMContentLoaded', () => {
             overview: ['Project details coming soon'],
             features: ['Features to be updated'],
             technologies: ['Technologies to be updated'],
-            role: ['Role details to be updated']
+            role: ['Role details to be updated'],
+            outcome: ['Outcome details to be updated'],
+            liveLink: '',
+            githubLink: '',
+            modalAppLink:''
         };
 
         document.getElementById('modalProjectTitle').textContent = projectTitle;
@@ -470,6 +530,39 @@ document.addEventListener('DOMContentLoaded', () => {
         populateList('modalProjectFeatures', data.features);
         populateList('modalProjectTech', data.technologies);
         populateList('modalProjectRole', data.role);
+        populateList('modalProjectOutcome', data.outcome);
+
+        // Populate project links
+        const liveLinkBtn = document.getElementById('modalLiveLink');
+        const githubLinkBtn = document.getElementById('modalGithubLink');
+        const appLinkBtn = document.getElementById('modalAppLink');
+
+        if (liveLinkBtn) {
+            if (data.liveLink) {
+                liveLinkBtn.href = data.liveLink;
+                liveLinkBtn.style.display = 'inline-block';
+            } else {
+                liveLinkBtn.style.display = 'none';
+            }
+        }
+
+        if (githubLinkBtn) {
+            if (data.githubLink) {
+                githubLinkBtn.href = data.githubLink;
+                githubLinkBtn.style.display = 'inline-block';
+            } else {
+                githubLinkBtn.style.display = 'none';
+            }
+        }
+
+        if(appLinkBtn){
+            if (data.modalAppLink) {
+                appLinkBtn.href = data.modalAppLink;
+                appLinkBtn.style.display = 'inline-block';
+            } else {
+                appLinkBtn.style.display = 'none';
+            }
+        }
     }
 
     // Function to toggle body scroll
