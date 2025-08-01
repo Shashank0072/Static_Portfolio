@@ -1,23 +1,35 @@
 /* General Styling */
 :root {
-    --primary-color: #6a0572; /* A soft purple */
-    --secondary-color: #8d43a0; /* A slightly lighter purple */
-    --accent-color: #e6b3ff; /* A very light purple/pink */
+    --primary-color: #6a0572;
+    /* A soft purple */
+    --secondary-color: #8d43a0;
+    /* A slightly lighter purple */
+    --accent-color: #e6b3ff;
+    /* A very light purple/pink */
     --text-color: #333;
     --bg-color: #f8f8f8;
     --card-bg-color: #fff;
     --border-color: #eee;
     --shadow-color: rgba(0, 0, 0, 0.08);
 
+
     /* Dark Mode Colors */
-    --dark-primary-color: #00C9B7;         /* Vibrant teal */
-    --dark-secondary-color: #4AD8C7;       /* Softer teal */
-    --dark-accent-color: #B0F2E2;          /* Muted mint highlight */
-    --dark-text-color: #ECECEC;            /* Soft white text */
-    --dark-bg-color: #0D0D0D;              /* Deep black-gray background */
-    --dark-card-bg-color: #1A1A1A;         /* Dark card background with mild contrast */
-    --dark-border-color: #2C2C2C;          /* Subtle borders */
-    --dark-shadow-color: rgba(0, 0, 0, 0.6); /* Deep shadow for realism */
+    --dark-primary-color: #00C9B7;
+    /* Vibrant teal */
+    --dark-secondary-color: #4AD8C7;
+    /* Softer teal */
+    --dark-accent-color: #B0F2E2;
+    /* Muted mint highlight */
+    --dark-text-color: #ECECEC;
+    /* Soft white text */
+    --dark-bg-color: #0D0D0D;
+    /* Deep black-gray background */
+    --dark-card-bg-color: #1A1A1A;
+    /* Dark card background with mild contrast */
+    --dark-border-color: #2C2C2C;
+    /* Subtle borders */
+    --dark-shadow-color: rgba(0, 0, 0, 0.6);
+    /* Deep shadow for realism */
 }
 
 /* Dark Mode Specific Styles */
@@ -299,10 +311,14 @@ body {
 
 .logo {
     /* For "SHASHANK MITTAL" */
-    font-family: 'Poppins', sans-serif; /* Or a similar clean sans-serif like Arial, Helvetica, or Montserrat */
-    font-size: 1.3em; /* Adjust as needed */
-    font-weight: 400; /* Bold */
-    color: var(--primary-color); /* Dark grey, close to black */
+    font-family: 'Poppins', sans-serif;
+    /* Or a similar clean sans-serif like Arial, Helvetica, or Montserrat */
+    font-size: 1.3em;
+    /* Adjust as needed */
+    font-weight: 400;
+    /* Bold */
+    color: var(--primary-color);
+    /* Dark grey, close to black */
     text-decoration: none;
     transition: color 0.3s ease;
     display: flex;
@@ -311,11 +327,15 @@ body {
 
 .logo-initials {
     /* For the "SM" part, if you can wrap it separately */
-    font-family: 'Georgia', serif; /* Or a similar serif font to match the 'SM' */
-    font-size: 1.3em; /* Larger size for the initials */
-    font-weight: 500; /* Slightly less bold than the name, adjust as needed */  
+    font-family: 'Georgia', serif;
+    /* Or a similar serif font to match the 'SM' */
+    font-size: 1.3em;
+    /* Larger size for the initials */
+    font-weight: 500;
+    /* Slightly less bold than the name, adjust as needed */
     /* Solid color approximation of the gradient start/end */
-    color: var(--primary-color); /* A medium blue-grey */
+    color: var(--primary-color);
+    /* A medium blue-grey */
     /* To achieve a true gradient like in the image, you'd typically use: */
     /* background: linear-gradient(to right, #4A6E9B, #8DA4BC); */
     /* -webkit-background-clip: text; */
@@ -372,11 +392,13 @@ body {
 
 /* Hamburger Menu */
 .hamburger {
-    display: none; /* Hidden by default on desktop */
+    display: none;
+    /* Hidden by default on desktop */
     flex-direction: column;
     cursor: pointer;
     padding: 10px;
-    z-index: 1100; /* Above mobile menu overlay */
+    z-index: 1100;
+    /* Above mobile menu overlay */
 }
 
 .hamburger .bar {
@@ -411,7 +433,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 999;
-    transform: translateX(100%); /* Start off-screen */
+    transform: translateX(100%);
+    /* Start off-screen */
     transition: transform 0.4s ease-in-out;
 }
 
@@ -485,7 +508,8 @@ body {
     font-weight: 500;
     color: var(--secondary-color);
     margin-bottom: 25px;
-    min-height: 1.2em; /* Ensure space for typing animation */
+    min-height: 1.2em;
+    /* Ensure space for typing animation */
 }
 
 .typing-cursor {
@@ -495,13 +519,20 @@ body {
     color: var(--secondary-color);
 }
 
-.achievement-icon{
+.achievement-icon {
     color: var(--primary-color);
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 .hero-description {
@@ -549,9 +580,20 @@ body {
 }
 
 @keyframes bg-pulse {
-    0% { transform: scale(1) translate(0, 0); opacity: 0.2; }
-    50% { transform: scale(1.2) translate(20px, 20px); opacity: 0.3; }
-    100% { transform: scale(1) translate(0, 0); opacity: 0.2; }
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0.2;
+    }
+
+    50% {
+        transform: scale(1.2) translate(20px, 20px);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0.2;
+    }
 }
 
 
@@ -643,8 +685,10 @@ body {
     height: 100%;
     background-color: var(--secondary-color);
     border-radius: 5px;
-    width: 0; /* Initial width for animation */
-    transition: width 1s ease-out; /* Animation for width */
+    width: 0;
+    /* Initial width for animation */
+    transition: width 1s ease-out;
+    /* Animation for width */
 }
 
 /* Portfolio Section */
@@ -733,7 +777,7 @@ body {
 
 /*Model POPUP Button*/
 
-.website-link{
+.website-link {
     width: 45px;
     height: 45px;
     border-radius: 25px;
@@ -745,13 +789,13 @@ body {
     border-color: transparent;
 }
 
-.website-link:hover{
+.website-link:hover {
     background-color: var(--secondary-color);
 
 }
 
 
-.browser-links{
+.browser-links {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -761,13 +805,35 @@ body {
     background-color: var(--card-bg-color);
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
-    width: 55px;
+    width: 0px;
     height: 59px;
+    margin: 0px 12px;
 }
 
 .btn-link:hover {
     background-color: var(--primary-color);
     color: #fff;
+}
+
+
+.button-icon {
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 0px 0.5px;
+    color: var(--primary-color);
+}
+
+.btn.btn-link:hover i {
+    color: var(--bg-color)
+        /* A standard link hover color */
+}
+
+.btn.btn-link i {
+    transition: color 0.3s ease-in-out;
+    /* Adds a smooth transition effect */
 }
 
 /*Case Studies Section */
@@ -862,49 +928,54 @@ body {
     position: relative;
     height: 300px;
     margin-top: 3em;
-  }
-  
-  .slides {
+}
+
+.slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .slide {
+}
+
+.slide {
     width: 100%;
     flex-shrink: 0;
     height: 300px;
     object-fit: cover;
-  }
-  
-  .arrow {
+}
+
+.arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
     color: white;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     border: none;
     cursor: pointer;
     padding: 8px;
     z-index: 10;
-  }
-  
-  .prev { left: 10px;
-border-radius: 30px;
-height: 60px; }
-  .next { right: 10px;
+}
+
+.prev {
+    left: 10px;
     border-radius: 30px;
-    height: 60px; }
-  
-  .dots {
+    height: 60px;
+}
+
+.next {
+    right: 10px;
+    border-radius: 30px;
+    height: 60px;
+}
+
+.dots {
     text-align: center;
     position: absolute;
     bottom: 10px;
     width: 100%;
     z-index: 10;
-  }
-  
-  .dots span {
+}
+
+.dots span {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -912,12 +983,12 @@ height: 60px; }
     background: #ccc;
     border-radius: 50%;
     cursor: pointer;
-  }
-  
-  .dots .active {
+}
+
+.dots .active {
     background: #333;
-  }
-  
+}
+
 
 /* Light Mode Style
 .light-style {
@@ -984,7 +1055,8 @@ height: 60px; }
 .contact-form textarea:focus {
     border-color: var(--primary-color);
     outline: none;
-    box-shadow: 0 0 0 3px rgba(106, 5, 114, 0.2); /* Soft focus ring */
+    box-shadow: 0 0 0 3px rgba(106, 5, 114, 0.2);
+    /* Soft focus ring */
 }
 
 .contact-form textarea {
@@ -996,7 +1068,8 @@ height: 60px; }
     color: #ff4d4d;
     font-size: 0.9em;
     margin-top: 5px;
-    height: 18px; /* Reserve space to prevent layout shift */
+    height: 18px;
+    /* Reserve space to prevent layout shift */
 }
 
 /* Footer */
@@ -1017,7 +1090,7 @@ height: 60px; }
 
 .footer .social-links a:hover {
     color: var(--accent-color);
-    
+
 }
 
 /* Back to Top Button */
@@ -1120,7 +1193,7 @@ height: 60px; }
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-   
+
 }
 
 .modal-content {
@@ -1143,6 +1216,7 @@ height: 60px; }
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1246,7 +1320,8 @@ body.modal-open {
 /* Prevent background content from being interactive when modal is open */
 body.modal-open {
     overflow: hidden;
-    padding-right: 15px; /* Prevent content shift when scrollbar disappears */
+    padding-right: 15px;
+    /* Prevent content shift when scrollbar disappears */
 }
 
 /* Scroll Animations (Intersection Observer) */
@@ -1283,6 +1358,7 @@ body.modal-open {
     background-color: var(--card-bg-color);
     padding: 25px 0;
 }
+
 /* 
 .education-container,
 .experience-container {
@@ -1407,11 +1483,13 @@ body.modal-open {
     }
 
     .nav-menu {
-        display: none; /* Hide desktop nav */
+        display: none;
+        /* Hide desktop nav */
     }
 
     .hamburger {
-        display: flex; /* Show hamburger */
+        display: flex;
+        /* Show hamburger */
     }
 
     .hero-name {
@@ -1452,7 +1530,8 @@ body.modal-open {
     }
 
     .portfolio-grid {
-        grid-template-columns: 1fr; /* Stack on smaller screens */
+        grid-template-columns: 1fr;
+        /* Stack on smaller screens */
     }
 
     .portfolio-item img {
@@ -1504,7 +1583,8 @@ body.modal-open {
     }
 
     .skills-grid {
-        grid-template-columns: 1fr; /* Stack skills */
+        grid-template-columns: 1fr;
+        /* Stack skills */
     }
 
     .skill-card {
