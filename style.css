@@ -806,7 +806,7 @@ body {
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
     width: 0px;
-    height: 59px;
+    height: 44px;
     margin: 0px 12px;
 }
 
@@ -1567,6 +1567,16 @@ body.modal-open {
     .btn {
         padding: 10px 20px;
         font-size: 1em;
+    }
+
+    .btn .btn-link {
+        padding: 4px 20px;
+        font-size: 1em;
+        height: 40px;
+    }
+    
+    .button-icon{
+        margin: 0px;
     }
 
     .section-padding {
