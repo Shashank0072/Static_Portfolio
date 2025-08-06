@@ -387,93 +387,202 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectData = {
         'Jansatta': {
             overview: [
-                'Digital news platform for Hindi readers',
-                'Multi-platform presence (Web, Android, iOS)',
-                'Real-time news updates and notifications'
+                'A Hindi-language news platform under the Indian Express Group, offering real-time news, editorials, and multimedia content across multiple categories including politics, entertainment, and sports.',
+                'High-traffic website with complex schema structures, SEO optimization, and dynamic content delivery.'
+                
             ],
             features: [
-                'Live news updates',
-                'Category-based news organization',
-                'Push notifications for breaking news',
-                'Offline reading capability'
+                'Schema markup and SEO data validation (including multilingual schema support)',
+                'Article publishing and CMS workflows',
+                'Responsive UI across mobile, tablet, and desktop',
+                'Video embedding, photo gallery rendering, and AMP (Accelerated Mobile Pages)',
+                'Sitemap generation and validation for search engine indexing'
             ],
             technologies: [
-                'Selenium WebDriver',
-                'Python',
-                'Pytest',
-                'Jenkins',
-                'JIRA'
+                'JavaScript, Playwright',
+                ' Postman, REST Assured',
+                'Manual Testing',
+                'Jenkins, GitHub',
+                'Allure Reports',
+                'JIRA',
+                ' Lighthouse, Screaming Frog (SEO validation), Chrome DevTools'
             ],
             role: [
-                'Led end-to-end testing of web and mobile applications',
-                'Developed automated test suites reducing testing time by 60%',
-                'Implemented CI/CD pipeline for test automation',
-                'Coordinated with development team for bug fixes'
+                'Developed end-to-end automation test suites for article creation, update, and rendering flows',
+                'Created custom validators for schema markup (JSON-LD) to ensure SEO compliance',
+                'Automated sitemap validation to detect malformed characters (Hindi, special ASCII)',
+                'Performed mobile-first UI validation for responsive layout consistency',
+                'Collaborated closely with editorial and SEO teams for test planning and release sign-off',
+                'Configured test reporting and integrated Allure reports with CI pipelines'
             ],
             outcome:[
-                'Improved test coverage by 40%',
+                'Reduced schema-related SEO issues by 70% through proactive automation checks',
+                'Helped maintain 99.9% uptime and fast news publishing cycles during high-traffic events (elections, cricket, etc.)',
+                'Identified multiple sitemap issues before search engine crawlers flagged them, improving indexing efficiency',
+                'Significantly reduced manual QA effort with reusable automation suites'
             ],
             liveLink: 'https://www.jansatta.com/',
-            githubLink: 'https://www.jansatta.com/', // No public GitHub repo for this project
-            modalAppLink:'https://www.jansatta.com/'
+            githubLink: 'https://play.google.com/store/apps/details?id=com.jansatta.android&hl=en_IN', // No public GitHub repo for this project
+            modalAppLink:'https://apps.apple.com/in/app/jansatta-hindi-news-epaper/id1087354876'
 
         },
         'Loksatta': {
-            overview: [
-                'Marathi language news platform',
-                'Digital transformation of traditional newspaper',
-                'Focus on regional news coverage'
+           overview: [
+                'A leading Marathi-language news portal under the Indian Express Group, delivering breaking news, regional updates, and multimedia content across various domains including politics, entertainment, and lifestyle.',
+                'Focused on multilingual support, regional audience engagement, and fast content delivery.'
+                
             ],
             features: [
-                'Multilingual support',
-                'Video content integration',
-                'Social media sharing',
-                'Personalized news feed'
+                'CMS-driven article publishing, tagging, and categorization',
+                'Schema markup validation for rich search results (with Marathi content)',
+                'Sitemap generation for news and multimedia pages',
+                'AMP (Accelerated Mobile Pages) rendering for mobile web',
+                'Video carousel, trending news widgets, and infinite scroll behavior',
+                'Ad placements, lazy loading, and performance optimization'
             ],
             technologies: [
-                'Selenium WebDriver',
-                'Python',
-                'TestNG',
-                'Git',
-                'JIRA'
+                'JavaScript, Playwright',
+                ' Postman, REST Assured',
+                'Manual Testing',
+                'Jenkins, GitHub',
+                'Allure Reports',
+                'JIRA',
+                ' Lighthouse, Screaming Frog (SEO validation), Chrome DevTools'
             ],
             role: [
-                'Managed test automation framework',
-                'Created comprehensive test scenarios',
-                'Performed cross-browser testing',
-                'Tracked and reported bugs using JIRA'
+                'Created reusable Playwright scripts for E2E testing of core editorial workflows',
+                'Built automated validators for schema compliance in Marathi language (including unicode/special character handling)',
+                'Integrated sitemap sanity checks into CI pipeline to capture malformed entries proactively',
+                'Conducted AMP testing to ensure proper rendering and tracking behavior',
+                'Reported and tracked performance bottlenecks in homepage and listing pages',
+                'Worked closely with SEO team to identify schema inconsistencies and fix regressions early'
             ],
             outcome:[
-                'Enhanced user experience with faster load times',
+                'Prevented multiple SEO-related defects in schema and sitemap before production release',
+                'Improved regression coverage of multilingual content by 80% through automation',
+                'Boosted test execution speed with parallel test suites in CI/CD pipeline',
+                'Enabled faster releases with minimal manual intervention by QA team'
             ],
             liveLink: 'https://www.loksatta.com/',
-            githubLink: '',
-            modalAppLink:''
+            githubLink: 'https://play.google.com/store/search?q=loksatta&c=apps&hl=en_IN',
+            modalAppLink:'https://apps.apple.com/in/app/loksatta-marathi-news-epaper/id520802260'
         },
         'Trade India': {
             overview: [
-                "India's largest B2B marketplace, connecting global buyers and sellers.",
-                "Focused on providing a platform for small and medium-sized enterprises (SMEs)."
+                "A B2B e-commerce marketplace connecting buyers and suppliers across various industries with product listings, inquiries, lead management, and real-time chat.",
+                "Supports high-volume traffic, multilingual content, and complex business workflows like RFQs (Request for Quotations) and buyer-seller negotiations."    
             ],
             features: [
-                "Product and company search",
-                "Inquiry and quotation system",
-                "User authentication and profiles"
+                "Buyer and seller registration and login workflows (OTP/email verification)",
+                "Product listing, search filters, and inquiry generation",
+                "Lead tracking and message center modules",
+                "Chat integration, contact form, and secure document upload",
+                "Admin panel functionalities and vendor approval workflows",
+                "SEO-critical pages like company profile, trade leads, and static URLs"
             ],
-            technologies: ['Manual Testing', 'JIRA', 'SQL', 'Postman'],
+            technologies: ['Python','selenium','Manual Testing', 'JIRA', 'SQL', 'Postman'],
             role: [
-                "Conducted thorough testing of the B2B marketplace platform.",
-                "Developed and maintained test documentation, including test cases and bug reports.",
-                "Collaborated with developers to resolve critical issues, reducing bug resolution time."
+                "Developed scalable automation suite for regression testing of buyer-seller interaction flows",
+                "Automated API validation for lead generation and chat services",
+                "Built custom scripts to verify large-scale sitemap entries and schema for product and company pages",
+                "Performed cross-browser and mobile responsiveness testing for B2B workflows",
+                "Collaborated with developers and product managers for sprint-wise test planning and demo validations",
+                "Created test data pipelines for large-scale load simulation and marketplace behavior testing"
             ],
             outcome: [
-                "Improved platform stability by identifying and reporting critical bugs.",
-                "Ensured a high-quality user experience for both buyers and sellers."
+                "ImprReduced manual testing time by 65% through robust automation coverage",
+                "Identified critical search indexing bugs affecting 1,000+ product listings pre-release",
+                "Improved accuracy of lead tracking features through API and UI-level validation",
+                "Helped streamline CI-integrated QA processes, accelerating release cycles by 30%"
             ],
             liveLink: 'https://www.tradeindia.com/',
-            githubLink: '',
-            modalAppLink:''
+            githubLink: 'https://play.google.com/store/search?q=trade%20india&c=apps&hl=en_IN',
+            modalAppLink:'https://apps.apple.com/in/app/tradeindia-b2b-business-app/id1049304422'
         },
+        'TV9 News': {
+           overview: [
+                'Native news applications (Android & iOS) delivering real-time regional and national news in multiple Indian languages.',
+                'Backed by a dynamic CMS for content publishing, media management, and breaking news alerts.',
+                'Designed to handle high traffic, push notifications, and multimedia content (videos, carousels, galleries).'
+                
+            ],
+            features: [
+                'App onboarding, push notifications, and breaking news alerts',
+                'Video player (custom & YouTube), live TV stream, and offline caching',
+                'CMS publishing flow: story creation, media tagging, author and section management',
+                'Search functionality, news filters, and personalized feeds',
+                'Language toggle and localization support',
+                'Integration with analytics SDKs and ad SDKs (Google Ads, Firebase)'
+            ],
+            technologies: [
+                ' Postman, REST Assured',
+                // 'Jenkins, GitHub',
+                'Perfomance Testing',
+                'Manual Testing',
+                'Firebase Crashlytics',
+                'Google Analytics',
+                'JIRA',
+                // 'Screaming Frog (SEO validation), Chrome DevTools'
+            ],
+            role: [
+                'Designed and implemented hybrid testing strategy across mobile and CMS platforms',
+                'Performed API validation for story publishing, notification dispatch, and video endpoints',
+                'Conducted localization testing for Telugu, Kannada, Marathi, and Hindi news streams',
+                'Led defect triage meetings across mobile, backend, and editorial teams',
+                'Validated analytics event firing (Firebase, Mixpanel, Comscore) for user actions and tracking',
+                // 'Worked closely with SEO team to identify schema inconsistencies and fix regressions early'
+            ],
+            outcome:[
+                'Reduced mobile release testing time by 50% with robust automation pipelines',
+                'Caught critical CMS publishing bug before app store deployment',
+                'Improved coverage of edge-case scenarios like offline mode, push retries, and video fallback',
+                'Enabled nightly automation on real devices using BrowserStack, boosting release confidence'
+            ],
+            liveLink: 'https://www.tv9hindi.com/',
+            githubLink: 'https://play.google.com/store/apps/details?id=com.tv9news&hl=en_IN',
+            modalAppLink:'https://apps.apple.com/in/app/tv9-news-app-live-tv-news/id1671484759'
+        },
+        'Proceum': {
+           overview: [
+                'Proceum is a SaaS-based platform that allows organizations to manage SOPs (Standard Operating Procedures), audits, and compliance workflows digitally.',
+                'The platform supports multi-role access, document workflows, audit trails, notifications, and dashboards for compliance monitoring.'
+                
+            ],
+            features: [
+                'High-concurrency access to workflows and audit modules',
+                'Concurrent SOP approvals, document uploads/downloads',
+                'Load on notification and reminder dispatch system',
+                'Dashboard rendering with real-time compliance status',
+                'Role-based access handling under stress',
+                // 'Ad placements, lazy loading, and performance optimization'
+            ],
+            technologies: [
+                'Apache JMeter, BlazeMeter',
+                ' Postman, REST Assured',
+                // 'Jenkins, GitHub',
+                // 'Allure Reports',
+                'JIRA',
+                // ' Lighthouse, Screaming Frog (SEO validation), Chrome DevTools'
+            ],
+            role: [
+                'Designed and executed comprehensive load testing strategy simulating 500–1000 concurrent users',
+                'Developed JMeter scripts covering critical business transactions like login, SOP creation, review, and approval',
+                'Analyzed system performance under sustained load and during peak usage hours',
+                'Identified key performance bottlenecks in backend APIs and DB queries',
+                'Worked with DevOps to monitor and fine-tune server metrics (CPU, Memory, IOPS)',
+                'Provided detailed load test reports with recommendations on scalability and system tuning'
+            ],
+            outcome:[
+                'Improved API response time by 35% through optimizations suggested from load test results',
+                'Prevented production downtime by uncovering DB connection leaks during testing',
+                'Enabled the platform to scale for enterprise clients with >10,000 users',
+                'Established recurring load test suite as part of the release pipeline to ensure consistent performance benchmarks'
+            ],
+            liveLink: '',
+            githubLink: 'https://play.google.com/store/search?q=proceum&c=apps&hl=en_IN',
+            modalAppLink:'https://apps.apple.com/in/app/proceum/id6470613362'
+        },
+
         'Physics Wallah': {
             overview: [
                 "An Ed-tech platform providing affordable and quality education for competitive exams.",

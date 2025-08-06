@@ -1641,4 +1641,30 @@ body.modal-open {
     .message-box-content p {
         font-size: 1.1em;
     }
+    
+.social-share-buttons {
+    opacity: 1;
+    visibility: visible;
+    bottom: -45px;
+    right: -9px;
+    /* transition: all 0.3s ease; */
+    /* box-shadow: 0 8px 10px var(--accent-color); */
+}
+.social-share-buttons {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    /* transition: all 0.3s ease; */
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* background-color: var(--card-bg-color); */
+    width: 49px;
+    height: 202px;
+    border-radius: 30px;
+    align-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
 }
