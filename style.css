@@ -519,7 +519,7 @@ body {
     color: var(--secondary-color);
 }
 
-.achievement-icon {
+.achievement-icon, .edu-icon {
     color: var(--primary-color);
 }
 
